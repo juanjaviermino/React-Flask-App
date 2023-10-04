@@ -17,7 +17,9 @@ def createUser():
     print(request.json)
     id = db.insert_one({
         'name': request.json['name'],
+        'lastname': request.json['lastname'],
         'email': request.json['email'],
+        'nacionality': request.json['nacionality'],
         'password': request.json['password']
     })
     print(str(id.inserted_id))
@@ -31,7 +33,9 @@ def getUsers():
         users.append({
             '_id': str(ObjectId(doc['_id'])),
             'name': doc['name'],
+            'lastname': doc['lastname'],
             'email': doc['email'],
+            'nacionality': doc['nacionality'],
             'password': doc['password'],
         })
     return jsonify(users)
@@ -46,7 +50,9 @@ def getUser(id):
         return jsonify({
             '_id': str(ObjectId(user['_id'])),
             'name': user['name'],
+            'lastname': user['lastname'],
             'email': user['email'],
+            'nacionality': user['nacionality'],
             'password': user['password']
         })
     else:
@@ -84,7 +90,9 @@ def updateUser(id):
         try:
             db.update_one({'_id': ObjectId(id)}, {"$set": {
                 'name': request.json['name'],
+                'lastname': request.json['lastname'],
                 'email': request.json['email'],
+                'nacionality': request.json['nacionality'],
                 'password': request.json['password']
             }})
             return jsonify('Usuario '+ nombre +' actualizado')
