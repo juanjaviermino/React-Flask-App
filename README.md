@@ -14,7 +14,7 @@ Este proyecto utiliza el patrón de diseño MVC (Modelo-Vista-Controlador) para 
 
 ### Diagrama de Arquitectura del Framework
 
-![Diagrama de Arquitectura](ruta/imagen.png)
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="./Diagrama" width="1020" alt="Laravel Logo"></a></p>
 
 ### Explicación del Diagrama
 
