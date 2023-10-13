@@ -14,7 +14,7 @@ Este proyecto utiliza el patrón de diseño MVC (Modelo-Vista-Controlador) para 
 
 ### Diagrama de Arquitectura del Framework
 
-![Diagrama de Arquitectura](ruta/imagen.png)
+<img src="https://github.com/juanjaviermino/React-Flask-App/blob/b709ce2a225ed5eed7b3e93b12e14df9b0c6168d/Diagrama%20de%20arquitectura.jpg" width="1020" alt="Diagrama de arquitectura de Flask y React">
 
 ### Explicación del Diagrama
 
